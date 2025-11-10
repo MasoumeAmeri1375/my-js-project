@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+form input {
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: none;
+  width: 250px;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: #ff7e5f;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+form button:hover {
+  background: #feb47b;
+  transform: scale(1.05);
+}
+
+/* Board */
+.board {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.column {
+  background: #f4f4f4;
+  flex: 1;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.column h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.task-list {
+  min-height: 100px;
+}
+
+.task {
+  background: #fff;
+  padding: 0.7rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  cursor: grab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task button:hover {
+  background: #b02a37;
+}
