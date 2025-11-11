@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub User Finder Pro 🔍</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="finder-section">
+  <h1>GitHub User Finder Pro 🔍</h1>
+  <p>Search GitHub users, view detailed profile, explore repositories, and save favorites!</p>
+
+  <div class="search-bar">
+    <input type="text" id="usernameInput" placeholder="Enter GitHub username">
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <div class="user-card hidden" id="userCard">
+    <img id="userAvatar" src="" alt="Avatar">
+    <h2 id="userName"></h2>
+    <p id="userBio"></p>
+    <div class="stats">
+      <span id="repos"></span>
+      <span id="followers"></span>
+      <span id="following"></span>
+    </div>
+
+    <div class="filter-bar">
+      <label for="languageFilter">Language:</label>
+      <select id="languageFilter">
+        <option value="">All</option>
+      </select>
+
+      <label for="sortFilter">Sort by:</label>
+      <select id="sortFilter">
+        <option value="created">Created</option>
+        <option value="updated">Updated</option>
+        <option value="pushed">Pushed</option>
+        <option value="stars">Stars</option>
+      </select>
+    </div>
+
+    <h3>Repositories:</h3>
+    <ul id="repoList"></ul>
+
+    <div class="pagination">
+      <button id="prevPage">Prev</button>
+      <span id="pageNumber">1</span>
+      <button id="nextPage">Next</button>
+    </div>
+
+    <a id="profileLink" href="" target="_blank">View Full Profile</a>
+  </div>
+
+  <div class="favorites">
+    <h3>Favorite Users:</h3>
+    <ul id="favoritesList"></ul>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

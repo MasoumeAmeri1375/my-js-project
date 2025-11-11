@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Your Plan 💳</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="pricing-section">
+    <h1>Choose Your Plan 💎</h1>
+    <p>Simple, transparent pricing. Choose Monthly or Yearly billing.</p>
+
+    <div class="toggle">
+      <span>Monthly</span>
+      <label class="switch">
+        <input type="checkbox" id="billingToggle">
+        <span class="slider round"></span>
+      </label>
+      <span>Yearly <small>(Save 20%)</small></span>
+    </div>
+
+    <div class="cards">
+      <div class="card" data-plan="Basic" data-month="9" data-year="86">
+        <h2>Basic</h2>
+        <p class="price">$9 <span>/month</span></p>
+        <ul>
+          <li>✔️ Basic Tools</li>
+          <li>✔️ Email Support</li>
+          <li>❌ No Team Access</li>
+        </ul>
+        <button>Select</button>
+      </div>
+
+      <div class="card active" data-plan="Pro" data-month="19" data-year="182">
+        <h2>Pro</h2>
+        <p class="price">$19 <span>/month</span></p>
+        <ul>
+          <li>✔️ Team Collaboration</li>
+          <li>✔️ Priority Support</li>
+          <li>✔️ All Basic Features</li>
+        </ul>
+        <button>Select</button>
+      </div>
+
+      <div class="card" data-plan="Premium" data-month="29" data-year="278">
+        <h2>Premium</h2>
+        <p class="price">$29 <span>/month</span></p>
+        <ul>
+          <li>✔️ 24/7 Support</li>
+          <li>✔️ Custom Integrations</li>
+          <li>✔️ All Pro Features</li>
+        </ul>
+        <button>Select</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment Modal -->
+  <div class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="planTitle"></h2>
+      <p id="planPrice"></p>
+
+      <form id="paymentForm">
+        <label>Name on Card</label>
+        <input type="text" placeholder="Masoume Ameri" required>
+
+        <label>Card Number</label>
+        <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" required>
+
+        <div class="form-row">
+          <div>
+            <label>Expiry</label>
+            <input type="text" placeholder="MM/YY" maxlength="5" required>
+          </div>
+          <div>
+            <label>CVV</label>
+            <input type="text" placeholder="123" maxlength="3" required>
+          </div>
+        </div>
+
+        <button type="submit" class="subscribe-btn">Pay Now 💳</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

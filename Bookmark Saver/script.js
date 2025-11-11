@@ -42,5 +42,4 @@ bookmarkForm.addEventListener('submit', function(e) {
   }
 });
 
-// بارگذاری اولیه
 renderBookmarks();

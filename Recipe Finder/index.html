@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Finder Pro 🍲</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="recipe-section">
+  <h1>Recipe Finder Pro 🍲</h1>
+  <p>Find your favorite recipes with ingredients, steps, and more!</p>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search recipes by name">
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <div class="recipes" id="recipeContainer">
+    <!-- Recipe cards injected here -->
+  </div>
+</section>
+
+<!-- Modal for Recipe Details -->
+<div class="modal hidden">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modalImg" src="" alt="Recipe Image">
+    <h2 id="modalTitle"></h2>
+    <p id="modalReadyTime"></p>
+    <h3>Ingredients:</h3>
+    <ul id="modalIngredients"></ul>
+    <h3>Instructions:</h3>
+    <ol id="modalInstructions"></ol>
+    <button id="favoriteBtn">❤ Add to Favorites</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currency Converter 💱</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="converter-section">
+    <h1>Currency Converter 💱</h1>
+    <p>Convert currencies instantly with live rates!</p>
+
+    <div class="converter">
+      <input type="number" id="amount" placeholder="Enter amount" value="1">
+      <select id="fromCurrency"></select>
+      <span>➡</span>
+      <select id="toCurrency"></select>
+      <button id="convertBtn">Convert</button>
+    </div>
+
+    <div class="result" id="result">
+      <!-- Conversion result -->
+    </div>
+
+    <div class="history">
+      <h3>Conversion History</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>
